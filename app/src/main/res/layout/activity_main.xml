@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:id="@+id/mainact1">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="8">-->
+
+<!--&lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/logo"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginTop="@dimen/activity_vertical_margin"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="35dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/logo"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textAlignment="center"/>&ndash;&gt;-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40">
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/startPager"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:text="Login to Spik n Span"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/loginbutton"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/createnew"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:text="Create a New Account"
+            android:textColor="@android:color/holo_orange_light"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:background="@drawable/createnew"
+            android:textSize="20sp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFEB3B"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FF9800"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainact2"
+        android:layout_marginTop="-500dp"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Your Welcome"
+            android:textColor="#FF9800"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/start2"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--    android:background="@color/graylight"-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:fillViewport="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:background="@android:color/holo_orange_light">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="45dp"
+            android:id="@+id/dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/cuslogo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/name"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="italic"
+            android:id="@+id/category"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="8"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/addreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:orientation="vertical"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_rate_review_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:paddingLeft="20dp"
+                    android:text="Add review"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/directions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:orientation="vertical"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_directions_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingLeft="20dp"
+                    android:text="Directions"
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:orientation="vertical"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_call_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:paddingLeft="20dp"
+                    android:text="Call"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:clickable="true"
+                android:orientation="vertical"
+                tools:ignore="TouchTargetSizeCheck">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_message_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:paddingLeft="20dp"
+                    android:text="Message"
+                    android:textSize="12sp"
+                    tools:ignore="TextContrastCheck,TextContrastCheck" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/request"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text="Request Service"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:textSize="20sp">
+        </Button>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pay"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Make Payment"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:textSize="20sp">
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="Ratings &amp; Reviews"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp" />
+        <TextView
+            android:id="@+id/avRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:selectableItemBackground"
+            android:fontFamily="@font/roboto"
+            android:textColor="#333333"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="@+id/ratingBar"
+            app:layout_constraintHorizontal_bias="0.36"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar" />
+
+        <RatingBar
+            android:id="@+id/avBar"
+            style="@android:style/Widget.Material.Light.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:numStars="5"
+            android:progressTint="#333333"
+            android:stepSize="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.07999998"
+            android:layout_marginLeft="16dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/nrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/ratingBar"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+                android:layout_marginLeft="8dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#333333"
+                app:layout_constraintEnd_toEndOf="@+id/ratingBar"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="@+id/textView2"
+                app:srcCompat="@drawable/person"
+                android:layout_marginRight="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

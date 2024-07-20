@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">HouseMaid</string>
+    <string-array name="Cities">
+        <item>Select City</item>
+        <item>Arusha</item>
+        <item>Dar-es-salaam</item>
+        <item>Dodoma</item>
+        <item>Geita</item>
+        <item>Iringa</item>
+        <item>Kagera</item>
+        <item>Kaskazini Pemba</item>
+        <item>Kaskazini Unguja</item>
+        <item>Katavi</item>
+        <item>Kigoma</item>
+        <item>Kilimanjaro</item>
+        <item>Kusini Pemba</item>
+        <item>Kusini Unguja</item>
+        <item>Lindi</item>
+        <item>Manyara</item>
+        <item>Mara</item>
+        <item>Mbeya</item>
+        <item>Mjini Magharibi</item>
+        <item>Morogoro</item>
+        <item>Mtwara</item>
+        <item>Mwanza</item>
+        <item>Njombe</item>
+        <item>Pwani</item>
+        <item>Rukwa</item>
+        <item>Ruvuma</item>
+        <item>Shinyanga</item>
+        <item>Simiyu</item>
+        <item>Singida</item>
+        <item>Songwe</item>
+        <item>Tabora</item>
+        <item>Tanga</item>
+
+    </string-array>
+    <string-array name="Categories">
+        <item>Select category</item>
+
+        <item>Home Assistant</item>
+        <item>Elder Care</item>
+        <item>Pet Care</item>
+        <item>Home Cooking</item>
+        <item>Home Cleaning</item>
+        <item>Baby Sitters</item>
+        <item>Gardener</item>
+        <item>Others</item>
+
+
+
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Messages</string>
+    <string name="title_settings">Settings</string>
+</resources>

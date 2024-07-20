@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:fillViewport="false"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:weightSum="16"
+            tools:context=".CreateAccount">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="125dp"
+                android:layout_height="45dp"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/Create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLines="1"
+                android:text="Create your Spik n Span Account"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/firstname"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:hint="First Name"
+                    android:inputType="textCapWords"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/lastname"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:hint="Last Name"
+                    android:inputType="textCapWords"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Enter Your email"
+                android:inputType="textEmailAddress"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="+255"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:ems="10"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/checkMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/checkFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="Female" />
+
+                <!--            <RadioButton-->
+                <!--                android:id="@+id/checkOthers"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_weight="1"-->
+                <!--                android:text="Others" />-->
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/citylist"
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:scrollbarStyle="outsideInset"
+                android:text="Select City"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/acctype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:checkedButton="@+id/checkCustomer"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RadioButton
+                    android:id="@+id/checkCustomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Customer" />
+                />
+
+                <RadioButton
+                    android:id="@+id/checkServiceProvider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="ServiceProvider" />
+                />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/pwd"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/confirmpwd"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/categories"
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:scrollbarStyle="outsideInset"
+                android:text="Select City"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/pBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:minWidth="50dp"
+                android:minHeight="50dp"
+                android:visibility="invisible"></ProgressBar>
+
+            <Button
+                android:id="@+id/btSubmit"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="-28dp"
+                android:layout_weight="2"
+                android:background="@drawable/loginbutton"
+                android:clickable="false"
+                android:text="Submit" />
+
+            <Button
+                android:id="@+id/btNext"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="-27dp"
+                android:layout_weight="2"
+                android:background="@drawable/loginbutton"
+                android:clickable="false"
+                android:text="Next"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Already have an Account?"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/signin"
+                    android:layout_width="159dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Sign in"
+                    android:textColor="#F3AD21" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
